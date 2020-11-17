@@ -79,6 +79,16 @@ Das fertige Block Design sollte dann in etwa so aussehen:
 ## Upload to PYNQ
 ### Mit dem PYNQ verbinden
 - Mit dem gsg VPN verbinden
+#### Uni GSG VPN
+- SSH Tunnel aufbauen: `ssh -D8888 login.cs.uni-bonn.de`
+![https://gsg.informatik.uni-bonn.de/doku.php?id=en:ssh:socksproxy](VPNssh.png)
+![](VPNprox.png)
+![](VPNprox2.png)
+- [b-it User Management Interface](https://nic1.bit.uni-bonn.de/)
+    - Neues Zertifikat erstellen & herunterladen
+    - ![](VPNprof.png)
+- `sudo openvpn /[Pfad]/sabatsch-openvpn-udp.ovpn`
+#### Verbindung zum Labor
 - ssh -L 9090:pynq:9090 -N [gsg username]@TiLab[6 oder 7].informatik.uni-bonn.de
 - browser auf localhost:9090 öffnen
 ![](jupyterLogin.png)
