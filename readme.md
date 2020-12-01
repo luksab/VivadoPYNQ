@@ -25,7 +25,7 @@ Bei allen übersprungenen Schritten sind die defaults auszuwählen.
 - Edit IP
 ![Edit IP](editIPnext.png)
 ### Bearbeiten:
-- Öffne die AXIlite Schnittstelle in deienem Texteditor der Wahl.
+- Öffne die AXIlite Schnittstelle (liegt in ip_repo/[AXI_name]) in deienem Texteditor der Wahl.
 ![VSCode AXIlite](editIPCode.png)
 - In [IPname].vhd bei port, der component [IPname]_S00_AXI und in der port map die Pins hinzufügen.
 ![](vhdPort.png)
